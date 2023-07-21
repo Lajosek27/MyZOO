@@ -6,6 +6,9 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\animals\\rino' => $baseDir . '/src/animals/rino.php',
     'App\\animals\\tiger' => $baseDir . '/src/animals/tiger.php',
+    'App\\core\\abstractAnimal' => $baseDir . '/src/core/abstractAnimal.php',
+    'App\\core\\template' => $baseDir . '/src/core/template.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

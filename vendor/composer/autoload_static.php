@@ -21,7 +21,10 @@ class ComposerStaticInitf4a9d7c0dca0e6d31b978c49fbcfceeb
     );
 
     public static $classMap = array (
+        'App\\animals\\rino' => __DIR__ . '/../..' . '/src/animals/rino.php',
         'App\\animals\\tiger' => __DIR__ . '/../..' . '/src/animals/tiger.php',
+        'App\\core\\abstractAnimal' => __DIR__ . '/../..' . '/src/core/abstractAnimal.php',
+        'App\\core\\template' => __DIR__ . '/../..' . '/src/core/template.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

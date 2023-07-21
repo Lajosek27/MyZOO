@@ -1,4 +1,5 @@
 <?php 
+require __DIR__.'/config.php';
 require 'vendor/autoload.php';
 
 use App\controller\animalsController;
