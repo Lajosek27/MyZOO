@@ -5,6 +5,8 @@ use App\controller\animalsController;
 
 ob_start();
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$animal = new animalsController();
+
 
 switch($uri)
 {   
@@ -13,8 +15,9 @@ switch($uri)
         echo"home";
         break;
     case '/tiger':
-        echo"Tygrysek";
-        $animal = new animalsController('tiger');
-        echo $animal->showAnimal();
+        echo $animal->showAnimal('tiger');
+    break;
+    case '/rino':
+        echo $animal->showAnimal('rino');
     break;
 }

@@ -1,18 +1,12 @@
 <?php 
 namespace App\animals;
 
-use App\core\abstractAnimals;
+use App\core\abstractAnimal;
 
 
-class tiger 
+class tiger extends abstractAnimal
 {   
-
-    public function makeSound()
-    {
-        return 'ROoooRRRR';
-    }
-    public function __invoke()
-    {
-        return 'Tygrys ';
-    }
+    protected string $speciesType ="Tygrys";
+   
+    
 }
