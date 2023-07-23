@@ -29,15 +29,35 @@ class animalsController
                 $this->animal = new rino('Kajtek');
                 break;
         }    
-        
+
+
        
-       $this->template->render(
-        'animal',
-        $this->animal,
-        $args = [
-            'name' => $this->animal
+       
+       
+        if(isset($_POST['ZOO']))
+        {   
+            $this->animal->setCaptured(true);
+            $_SESSION[$animalType]['captured'] = true;
+
+        }elseif(isset($_POST['wild'])){
+            $this->animal->setCaptured(false);
+            $_SESSION[$animalType]['captured'] = false;
+        }
+
+        if(isset($_SESSION[$animalType]['captured']) && !empty($_SESSION[$animalType]['captured']))
+        {
+            $this->animal->setCaptured($_SESSION[$animalType]['captured']);
+        }
+        
+        $this->template->render(
+            'animal',
+            $this->animal,
+            $args = [
+                'animal' => $this->animal,
+                'animalType' => $animalType,
+                'captured' => $this->animal->isCaptured(),
         ]);
-        // return $this->animal;
+     
         
     }
 }

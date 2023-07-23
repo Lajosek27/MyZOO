@@ -6,25 +6,28 @@ abstract class abstractAnimal
 {   
     protected string $speciesType;
     private string $name;
+
+    private bool $captured = false;
     final public function __construct($name)
     {
         $this->name = $name;
-        $this->setSpeciesType();
+        $this->getSpeciesType();
+        
     }
-
-
 
     /**
      * Function reqiure to force inplement $speciesType in child class
      *
      * @return string
      */
-    final public function setSpeciesType() : String
+    final public function getSpeciesType() : String
     {   
         if(!isset($this->speciesType) || empty($this->speciesType))
         {
-            throw new \Exception("You have to set \$spicieType in your  class called ".$this->name);
+            throw new \Exception("You have to set \$spicieType in your  class called ".get_class($this));
+            
         }
+       
         return $this->speciesType ;
     }
     
@@ -37,6 +40,14 @@ abstract class abstractAnimal
         return $this->speciesType .' '. $this->name;
     }
     
-
+    public function setCaptured($captured)
+    {
+        $this->captured = $captured;
+    }
+    public function isCaptured()
+    {
+        return $this->captured ;
+    }
+    
    
 }

@@ -38,7 +38,7 @@
                             </p>
                         </div>
                    </div>
-                  
+
                     <div class="actions">
                         <div class="captureForm">
                             <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
