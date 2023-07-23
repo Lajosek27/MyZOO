@@ -7,11 +7,18 @@
     <main>
        <div class="mainWrapper">
             <section id="animalInfo">
-                <div class="imgWrapper"><img src="public/img/tiger-normal.webp" ></div>
-                <div class="contentWrapper">
-                    <div class="info">
+                <div class="left">
+                    <div class="imgWrapper">
+                        <img src="public/img/tiger-normal.webp" >
+                    </div>
+                    <div class="name">
                         <h4><?=sprintf('%s',$param['name'])?></h4>
                     </div>
+                </div>
+                <div class="right">
+                   <div class="capture">
+                    <p>Status: <span class="free">Na wolności</span></p>
+                   </div>
                 </div>
             </section>
        </div>

@@ -63,3 +63,42 @@ html body header .headerWrapper section .nav ul a:hover {
   background-color: #fff;
   color: var(--link);
 }
+
+html body main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+html body main > .mainWrapper {
+  width: 1400px;
+}
+
+html body main > .mainWrapper #animalInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+html body main > .mainWrapper #animalInfo .left .name h4 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+html body main > .mainWrapper #animalInfo .capture {
+  font-size: 18px;
+}
+
+html body main > .mainWrapper #animalInfo .capture span {
+  font-weight: 600;
+}
+
+html body main > .mainWrapper #animalInfo .capture span.free {
+  color: var(--link);
+}
+
+html body main > .mainWrapper #animalInfo .capture span.zoo {
+  color: red;
+}

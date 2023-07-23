@@ -61,5 +61,47 @@ html{
 
             }
         }
+
+        main{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 50px;
+
+            >.mainWrapper{
+                width: 1400px;
+
+
+                #animalInfo
+                {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+
+                    .left{
+                        .name h4{
+                            text-align: center;
+                            font-size: 30px;
+                            font-weight: 500;
+                        }
+                    }
+                    .capture{
+                        font-size: 18px;
+                        
+                        span{
+                            font-weight: 600;
+                        }
+
+                        span.free{
+                            color: var(--link);
+                        }
+                        span.zoo{
+                            color: red;
+                        }
+                    }
+                  
+                }
+            }
+        }
     }
 }
