@@ -12,13 +12,45 @@
                         <img src="public/img/tiger-normal.webp" >
                     </div>
                     <div class="name">
-                        <h4><?=sprintf('%s',$param['name'])?></h4>
+                        <h4><?=sprintf('%s',$param['animal'])?></h4>
                     </div>
                 </div>
                 <div class="right">
-                   <div class="capture">
-                    <p>Status: <span class="free">Na wolności</span></p>
+                    <div class="info">
+                        <div class="capture">
+                            <p>Status: 
+                                <?php if($param['captured'] == false): ?>
+                                    <span class="free">Na wolności</span>
+                                <?php else: ?>
+                                    <span class="zoo">W ZOO</span>
+                                <?php endif ?>
+                            </p>
+                        </div>
+                        <div class="food">
+                            <p>Zwierze: 
+                                <?php if(method_exists($param['animal'],'feedWithMeat') && method_exists($param['animal'],'feedWithVeggies')): ?>
+                                    <span class="meat">Wszystko</span><span class="vaggies">żerne</span>
+                                <?php elseif(method_exists($param['animal'],'feedWithMeat')): ?>
+                                    <span class="meat">Mięsożerne</span>
+                                <?php else: ?>
+                                    <span class="vaggies">Roślinożerne</span>
+                                <?php endif ?>
+                            </p>
+                        </div>
                    </div>
+                  
+                    <div class="actions">
+                        <div class="captureForm">
+                            <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
+                                <?php if($param['captured'] == false): ?>
+                                    <input type="checkbox" name="ZOO" id="ZOO"  style="display:none;" checked>
+                                <?php else: ?>
+                                    <input type="checkbox" name="wild" id="wild"  style="display:none;" checked>
+                                <?php endif ?>
+                                <button type="submit">capture</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
        </div>
