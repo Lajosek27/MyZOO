@@ -16,9 +16,29 @@
                     </div>
                 </div>
                 <div class="right">
-                   <div class="capture">
-                    <p>Status: <span class="free">Na wolności</span></p>
+                    <div class="info">
+                        <div class="capture">
+                            <p>Status: 
+                                <?php if($param['captured'] == false): ?>
+                                    <span class="free">Na wolności</span>
+                                <?php else: ?>
+                                    <span class="zoo">W ZOO</span>
+                                <?php endif ?>
+                            </p>
+                        </div>
                    </div>
+                    <div class="actions">
+                        <div class="captureForm">
+                            <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
+                                <?php if($param['captured'] == false): ?>
+                                    <input type="checkbox" name="ZOO" id="ZOO"  style="display:none;" checked>
+                                <?php else: ?>
+                                    <input type="checkbox" name="wild" id="wild"  style="display:none;" checked>
+                                <?php endif ?>
+                                <button type="submit">capture</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
        </div>
