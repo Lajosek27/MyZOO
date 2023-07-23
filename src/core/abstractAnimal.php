@@ -9,7 +9,7 @@ abstract class abstractAnimal
     final public function __construct($name)
     {
         $this->name = $name;
-        $this->setSpeciesType();
+        $this->getSpeciesType();
     }
 
 
@@ -19,12 +19,14 @@ abstract class abstractAnimal
      *
      * @return string
      */
-    final public function setSpeciesType() : String
+    final public function getSpeciesType() : String
     {   
         if(!isset($this->speciesType) || empty($this->speciesType))
         {
-            throw new \Exception("You have to set \$spicieType in your  class called ".$this->name);
+            throw new \Exception("You have to set \$spicieType in your  class called ".get_class($this));
+            
         }
+       
         return $this->speciesType ;
     }
     
