@@ -53,9 +53,9 @@ class animalsController
             'animal',
             $this->animal,
             $args = [
-                'name' => $this->animal,
+                'animal' => $this->animal,
                 'animalType' => $animalType,
-                'captured' => $this->animal->isCaptured()
+                'captured' => $this->animal->isCaptured(),
         ]);
      
         
