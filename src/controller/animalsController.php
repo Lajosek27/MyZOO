@@ -32,12 +32,10 @@ class animalsController
 
 
        
-        // var_dump($_SESSION[$animalType]['captured']);
-        // var_dump($this->animal->isCaptured());
+       
        
         if(isset($_POST['ZOO']))
         {   
-            
             $this->animal->setCaptured(true);
             $_SESSION[$animalType]['captured'] = true;
 
@@ -50,7 +48,7 @@ class animalsController
         {
             $this->animal->setCaptured($_SESSION[$animalType]['captured']);
         }
-        // var_dump($this->animal->isCaptured());
+        
         $this->template->render(
             'animal',
             $this->animal,
@@ -59,7 +57,7 @@ class animalsController
                 'animalType' => $animalType,
                 'captured' => $this->animal->isCaptured()
         ]);
-        // return $this->animal;
+     
         
     }
 }
