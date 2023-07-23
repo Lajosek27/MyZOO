@@ -1,0 +1,107 @@
+:root{
+    --main:#262A56;
+    --text:#eee;
+    --link:#1A913C;
+    --text-dark:#181818
+}
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+    a{
+        color: var(--link);
+        text-decoration: none;
+    }
+  
+    
+    body{
+       color: var(--text-dark);
+       font-weight: 400;
+        header{
+            background-color: var(--main);
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            .headerWrapper{
+                width: 1400px;
+
+                section{
+                    display: flex;
+                    gap: 50px;
+                    height: 80px;
+                    align-items: center;
+
+                    .logo h2{
+                        color: var(--text);
+                        font-weight: 700;
+                    }
+                    .nav{
+                        ul{
+                            display: inline-flex;
+                            gap: 20px;
+                            font-weight: 500;
+                            list-style: none;
+                            font-size: 18px;
+                            margin-bottom: 0;
+
+                            a{
+                                padding: 10px 15px;
+                                background-color: var(--link);
+                                color: #fff;
+                                border-radius: 0 15px;
+                                transition: color,background-color 0.1s ease-in;
+                            }
+                            a:hover{
+                                background-color: #fff;
+                                color: var(--link);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 50px;
+
+            >.mainWrapper{
+                width: 1400px;
+
+
+                #animalInfo
+                {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+
+                    .left{
+                        .name h4{
+                            text-align: center;
+                            font-size: 30px;
+                            font-weight: 500;
+                        }
+                    }
+                    .capture{
+                        font-size: 18px;
+                        
+                        span{
+                            font-weight: 600;
+                        }
+
+                        span.free{
+                            color: var(--link);
+                        }
+                        span.zoo{
+                            color: red;
+                        }
+                    }
+                  
+                }
+            }
+        }
+    }
+}
