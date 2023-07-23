@@ -81,18 +81,48 @@ html body main > .mainWrapper #animalInfo {
   gap: 30px;
 }
 
+html body main > .mainWrapper #animalInfo .flags {
+  position: relative;
+  top: -380px;
+}
+
+html body main > .mainWrapper #animalInfo .flags .flag {
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: #262a56;
+  color: #fff;
+  border-radius: 0 25px;
+  transition: color,background-color 0.1s ease-in;
+  width: min-content;
+  white-space: nowrap;
+}
+
+html body main > .mainWrapper #animalInfo .flags .flag p {
+  margin-bottom: 0;
+}
+
+html body main > .mainWrapper #animalInfo .flags .flag span {
+  opacity: 1;
+}
+
+html body main > .mainWrapper #animalInfo .flags .capture {
+  float: right;
+  margin-top: 0;
+}
+
+html body main > .mainWrapper #animalInfo .left .name {
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: var(--main);
+  color: #fff;
+  border-radius: 0 40px;
+  transition: color,background-color 0.1s ease-in;
+}
+
 html body main > .mainWrapper #animalInfo .left .name h4 {
   text-align: center;
   font-size: 30px;
   font-weight: 500;
-}
-
-html body main > .mainWrapper #animalInfo .capture {
-  font-size: 18px;
-}
-
-html body main > .mainWrapper #animalInfo .capture span {
-  font-weight: 600;
 }
 
 html body main > .mainWrapper #animalInfo .capture span.free {
@@ -101,4 +131,65 @@ html body main > .mainWrapper #animalInfo .capture span.free {
 
 html body main > .mainWrapper #animalInfo .capture span.zoo {
   color: red;
+}
+
+html body main > .mainWrapper #animalInfo .food span.meat {
+  color: red;
+}
+
+html body main > .mainWrapper #animalInfo .food span.vaggies {
+  color: var(--link);
+}
+
+html body main > .mainWrapper #animalInfo .food span.all {
+  background: red;
+  background: -moz-linear-gradient(256deg, red 0%, #1a9136 89%);
+  background: -webkit-linear-gradient(256deg, red 0%, #1a9136 89%);
+  background: linear-gradient(256deg, red 0%, #1a9136 89%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#1a9136",GradientType=1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html body main > .mainWrapper #animalInfo > div {
+  font-size: 16px;
+}
+
+html body main > .mainWrapper #animalInfo > div span {
+  font-weight: 600;
+}
+
+html body main > .mainWrapper #animalInfo .actions button {
+  padding: 10px 15px;
+  background-color: var(--link);
+  color: #fff;
+  border-radius: 0 15px;
+  transition: color,background-color 0.1s ease-in;
+  font-size: 27px;
+  max-height: 64px;
+}
+
+html body main > .mainWrapper #animalInfo .actions button:hover {
+  background-color: #fff;
+  color: var(--link);
+}
+
+html body main > .mainWrapper #animalInfo .right {
+  width: 80%;
+}
+
+html body main > .mainWrapper #animalInfo .right .czat {
+  width: 100%;
+  height: 282px;
+  padding: 10px 15px;
+  background-color: #262a56;
+  color: #fff;
+  border-radius: 0 50px;
+  transition: color,background-color 0.1s ease-in;
+}
+
+html body main > .mainWrapper #animalInfo .right .actions {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
 }

@@ -6,8 +6,8 @@ abstract class abstractAnimal
 {   
     protected string $speciesType;
     private string $name;
-
     private bool $captured = false;
+    
     final public function __construct($name)
     {
         $this->name = $name;
