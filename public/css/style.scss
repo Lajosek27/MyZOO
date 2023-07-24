@@ -39,13 +39,40 @@ html{
                             font-weight: 700;
                         }
                     }
-
+                    nav{
+                        width: 100%;
+                        
+                        .navbar-toggler{
+                           background-color: var(--text);
+                            position: relative;
+                            z-index: 11;
+                            border-radius: 0 15px;
+                        }
+                    }
                     #navbar{
+                        @media (max-width:1199px){
+                            z-index: 10;
+                            position: absolute;
+                            top: 70px;
+                            left: 0px;
+                            width: 100vw;
+                            background: var(--main);
+                        }
                         ul.navbar-nav{
                             align-items: center;
                             gap: 20px;
-                            
+                            @media (max-width:1199px){
+                               margin-top: 30px;
+                            }
                             li.nav-item {
+                                @media (max-width:1199px){
+                                    width: 130px;
+
+                                    .dropdown-toggle{
+                                        display: block;
+                                        width: 130px;
+                                    }
+                                }
                                 .dropdown-toggle,.nav-link{
                                     padding: 10px 15px;
                                     background-color: var(--link);
@@ -68,38 +95,21 @@ html{
                                         color: #fff;
                                         border-radius: 0 15px;
                                         transition: color,background-color 0.1s ease-in;
-                                        margin-top:10px
+                                        margin-top:10px;
+                                    
+
+                                        
                                     }
                                     .dropdown-item:hover{
                                         background-color: #fff;
                                         color: var(--link); 
                                     }
+
+                                   
                                 }
                             }
                         }
                     }
-                    // .nav{
-                    //     ul{
-                    //         display: inline-flex;
-                    //         gap: 20px;
-                    //         font-weight: 500;
-                    //         list-style: none;
-                    //         font-size: 18px;
-                    //         margin-bottom: 0;
-
-                    //         a{
-                    //             padding: 10px 15px;
-                    //             background-color: var(--link);
-                    //             color: #fff;
-                    //             border-radius: 0 15px;
-                    //             transition: color,background-color 0.1s ease-in;
-                    //         }
-                    //         a:hover{
-                    //             background-color: #fff;
-                    //             color: var(--link);
-                    //         }
-                    //     }
-                    // }
                 }
 
             }
@@ -113,16 +123,32 @@ html{
 
             >.mainWrapper{
                 width: 1400px;
-
+                @media (max-width:1410px){
+                    padding: 0 15px;
+                }
 
                 #animalInfo
-                {
+                {  
                     display: flex;
                     flex-direction: row;
                     gap: 30px;
+
+                    @media (max-width:992px){
+                        flex-direction: column;
+                    }
+
                     .flags{
                        position: relative;
                        top: -380px;
+                        height: 0px;
+                        @media (max-width:992px){
+                        width: 320px;
+
+                            .flag.food{
+                                margin-top: 0px;   
+                            }
+                        }
+                
                         .flag{
                             margin-top: 25px;
                             padding: 10px 15px;
@@ -135,6 +161,7 @@ html{
                             p{
                                 margin-bottom: 0;
                             }
+
                             span{
                                 opacity: 1;
                             }
@@ -146,7 +173,11 @@ html{
                                
                     }
                     .left{
-
+                        @media (max-width:992px){
+                            display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
                         .imgWrapper{
                             max-width: 320px;
                             max-height: 280px;
@@ -226,6 +257,12 @@ html{
                     }
                  .right{    
                     width: 80%;
+
+                    @media (max-width:992px){
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                    
                         .czat{
                             width: 100%;
                             height: 282px;
@@ -269,6 +306,16 @@ html{
                             display: flex;
                             margin-top: 23px;
                             gap: 20px;
+
+                            @media (max-width:992px){
+                                justify-content: center;
+                            }
+                            @media (max-width:756px){
+                              
+                                button{
+                                    font-size: 14px;
+                                }
+                            }
                         }
                     }
                           
