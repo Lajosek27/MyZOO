@@ -2,7 +2,8 @@
     --main:#262A56;
     --text:#eee;
     --link:#1A913C;
-    --text-dark:#181818
+    --text-dark:#181818;
+    
 }
 
 
@@ -31,32 +32,74 @@ html{
                     height: 80px;
                     align-items: center;
 
-                    .logo h2{
-                        color: var(--text);
-                        font-weight: 700;
+                    .logo {
+                        margin-right: 50px;
+                        h2{
+                            color: var(--text);
+                            font-weight: 700;
+                        }
                     }
-                    .nav{
-                        ul{
-                            display: inline-flex;
-                            gap: 20px;
-                            font-weight: 500;
-                            list-style: none;
-                            font-size: 18px;
-                            margin-bottom: 0;
 
-                            a{
-                                padding: 10px 15px;
-                                background-color: var(--link);
-                                color: #fff;
-                                border-radius: 0 15px;
-                                transition: color,background-color 0.1s ease-in;
-                            }
-                            a:hover{
-                                background-color: #fff;
-                                color: var(--link);
+                    #navbar{
+                        ul.navbar-nav{
+                            align-items: center;
+                            gap: 20px;
+                            
+                            li.nav-item {
+                                .dropdown-toggle,.nav-link{
+                                    padding: 10px 15px;
+                                    background-color: var(--link);
+                                    color: #fff;
+                                    border-radius: 0 15px;
+                                    transition: color,background-color 0.1s ease-in;
+                                }
+                                .dropdown-toggle:hover,.nav-link:hover{
+                                    background-color: #fff;
+                                    color: var(--link);
+                                }
+                                .dropdown-menu{
+                                    padding: 20px;
+                                    background-color: var(--main);
+                                    margin-top: 10px;
+                                    
+                                    .dropdown-item{
+                                        padding: 10px 15px;
+                                        background-color: var(--link);
+                                        color: #fff;
+                                        border-radius: 0 15px;
+                                        transition: color,background-color 0.1s ease-in;
+                                        margin-top:10px
+                                    }
+                                    .dropdown-item:hover{
+                                        background-color: #fff;
+                                        color: var(--link); 
+                                    }
+                                }
                             }
                         }
                     }
+                    // .nav{
+                    //     ul{
+                    //         display: inline-flex;
+                    //         gap: 20px;
+                    //         font-weight: 500;
+                    //         list-style: none;
+                    //         font-size: 18px;
+                    //         margin-bottom: 0;
+
+                    //         a{
+                    //             padding: 10px 15px;
+                    //             background-color: var(--link);
+                    //             color: #fff;
+                    //             border-radius: 0 15px;
+                    //             transition: color,background-color 0.1s ease-in;
+                    //         }
+                    //         a:hover{
+                    //             background-color: #fff;
+                    //             color: var(--link);
+                    //         }
+                    //     }
+                    // }
                 }
 
             }
