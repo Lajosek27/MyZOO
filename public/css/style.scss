@@ -180,7 +180,18 @@ html{
                                 max-height: 255px;
                                 overflow-y: scroll;
                                 width: 100%;
+
+                                
                             }
+                            .text::-webkit-scrollbar {
+                                width: 3px;
+                              }
+                            .text::-webkit-scrollbar-track {
+                                background: #f1f1f1;
+                              }
+                              .text::-webkit-scrollbar-thumb {
+                                background: #888;
+                              }
                             .cursor{
                                 border-left: .05em solid var(--text);
                                 animation: cursor 1s steps(1) infinite;
@@ -195,7 +206,7 @@ html{
                        
                         .actions{
                             display: flex;
-                            margin-top: 20px;
+                            margin-top: 23px;
                             gap: 20px;
                         }
                     }
