@@ -51,7 +51,7 @@
                        
                     </div>
                     <div style="display:none;" id="czatMessages" 
-                        <?php if(isset($_POST['ZOO']) ): ?>
+                        <?php if($param['captured'] == true): ?>
                             data-start-message="<?=sprintf('%s','Leży na wybiegu')?>"
                         <?php else: ?>
                             data-start-message="<?=sprintf('%s','cieszy się wolnością :) ')?>"
