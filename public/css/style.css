@@ -342,6 +342,12 @@ html body main > .mainWrapper #animalInfo .right .actions {
   gap: 20px;
 }
 
+@media (max-width: 1250px) {
+  html body main > .mainWrapper #animalInfo .right .actions button {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 992px) {
   html body main > .mainWrapper #animalInfo .right .actions {
     justify-content: center;
@@ -349,8 +355,21 @@ html body main > .mainWrapper #animalInfo .right .actions {
 }
 
 @media (max-width: 756px) {
+  html body main > .mainWrapper #animalInfo .right .actions {
+    flex-wrap: wrap;
+  }
   html body main > .mainWrapper #animalInfo .right .actions button {
     font-size: 14px;
+    width: 145px;
+  }
+  html body main > .mainWrapper #animalInfo .right .actions > div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 756px) {
+  html body main > .mainWrapper #animalInfo .right .actions > div:nth-child(odd) {
+    text-align: end;
   }
 }
 

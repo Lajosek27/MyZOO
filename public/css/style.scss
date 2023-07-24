@@ -308,15 +308,30 @@ html{
                             display: flex;
                             margin-top: 23px;
                             gap: 20px;
-
+                            
+                            @media (max-width:1250px){
+                                
+                                button{
+                                    font-size: 18px;
+                                }
+                            }
                             @media (max-width:992px){
                                 justify-content: center;
                             }
                             @media (max-width:756px){
-                              
+                                flex-wrap: wrap;
                                 button{
                                     font-size: 14px;
+                                    width: 145px;
                                 }
+                                >div{
+                                    width: 45%;
+                                }
+                            }
+                        }
+                        @media (max-width:756px){
+                            .actions >div:nth-child(odd) {
+                                text-align: end;
                             }
                         }
                     }
