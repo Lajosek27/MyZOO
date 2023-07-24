@@ -168,12 +168,31 @@ html{
                         .czat{
                             width: 100%;
                             height: 282px;
-                            padding: 10px 15px;
+                            padding: 10px 40px;
                             background-color: rgba(38, 42, 86, 1);
                             color: #fff;
                             border-radius: 0 50px;
                             transition: color,background-color 0.1s ease-in;
+                            display: flex;
+                            align-items: flex-end;
+                            .text {
+                                font-size: 20px;
+                                max-height: 255px;
+                                overflow-y: scroll;
+                                width: 100%;
+                            }
+                            .cursor{
+                                border-left: .05em solid var(--text);
+                                animation: cursor 1s steps(1) infinite;
+                                color: var(--main);
+                                scroll-behavior: smooth;
+                               
+                            }
+                            .text p{
+                                margin-bottom: 5px;
+                            }
                         } 
+                       
                         .actions{
                             display: flex;
                             margin-top: 20px;
@@ -186,3 +205,8 @@ html{
         }
     }
 }
+@keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }

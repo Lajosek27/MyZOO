@@ -46,9 +46,17 @@
                   
                 </div>
                 <div class="right">
-                    <div class="czat">
-                        <div id="cursor">|</div>
+                    <div class="czat" id="czat">
+                        <div class="text"> <span class="cursor">|</span></div>
+                       
                     </div>
+                    <div style="display:none;" id="czatMessages" 
+                        <?php if(isset($_POST['ZOO']) ): ?>
+                            data-start-message="<?=sprintf('%s','Leży na wybiegu')?>"
+                        <?php else: ?>
+                            data-start-message="<?=sprintf('%s','cieszy się wolnością :) ')?>"
+                        <?php endif; ?>
+                    ></div>
                     <div class="actions">
                         <div class="captureForm">
                             <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
@@ -64,26 +72,23 @@
                         </div>
                         <?php if(method_exists($param['animal'],'feedWithMeat')): ?>
                             <div class="FeedMeatForm">
-                                <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
-                                    <input type="hidden" name="feedWithMeat">
-                                    <button type="submit">Nakarm Mięsem</button>
-                                </form>
+                               
+                                    <button type="submit" onClick='newMessage("<?=sprintf('%s',$param['animal']->feedWithMeat())?>")'>Nakarm Mięsem</button>
+                              
                             </div>
                         <?php endif; ?>
                         <?php if(method_exists($param['animal'],'feedWithVeggies')): ?>
                             <div class="FeedVeggiesForm">
-                                <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
-                                    <input type="hidden" name="FeedVeggiesForm">
-                                    <button type="submit">Nakarm Mięsem</button>
-                                </form>
+
+                                    <button type="submit"  onClick='newMessage("<?=sprintf('%s',$param['animal']->feedWithVeggies())?>")'>Nakarm Mięsem</button>
+                             
                             </div>
                         <?php endif; ?>
                         <?php if(method_exists($param['animal'],'brushFur')): ?>
                             <div class="brushFurForm">
-                                <form action="/<?= sprintf('%s',$param['animalType'])?>" method="post">
-                                    <input type="hidden" name="brushFur">
-                                    <button type="submit">Wyczesz</button>
-                                </form>
+                                
+                                    <button type="submit"  onClick='newMessage("<?=sprintf('%s',$param['animal']->brushFur())?>")'>Wyczesz</button>
+                               
                             </div>
                         <?php endif; ?>
                     </div>          
@@ -91,7 +96,7 @@
             </section>
        </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <?php require(TEMPLATE_PATH.'footer.php'); ?>
 </body>
 </html>
 
