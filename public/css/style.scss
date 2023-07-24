@@ -107,6 +107,7 @@ html{
                         .imgWrapper{
                             max-width: 320px;
                             max-height: 280px;
+                            min-height: 270px;
                             overflow: hidden;
                             img{
                                 width: 100%;
@@ -116,7 +117,7 @@ html{
                             text-align: center;
                             font-size: 30px;
                             font-weight: 500;
-
+                        }
                         .name{  
                             margin-top: 25px;
                                 padding: 10px 15px;
