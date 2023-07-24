@@ -28,9 +28,11 @@ class animalsController
         {
             case 'tiger':
                 $this->animal = new tiger('Prążek');
+                $this->animal->setCoverImg('tiger-normal.webp');
                 break;
             case 'rino':
                 $this->animal = new rino('Kajtek');
+                $this->animal->setCoverImg('rino.webp');
                 break;
             case 'fox':
                 $this->animal = new fox('Mateuszek');
@@ -72,6 +74,7 @@ class animalsController
                 'animal' => $this->animal,
                 'animalType' => $animalType,
                 'captured' => $this->animal->isCaptured(),
+                'img' =>  $this->animal->getCoverImg(),
         ]);
      
         

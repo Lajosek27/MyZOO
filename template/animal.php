@@ -9,7 +9,7 @@
             <section id="animalInfo">
                 <div class="left">
                     <div class="imgWrapper">
-                        <img src="public/img/tiger-normal.webp" >
+                        <img src="public/img/<?=sprintf('%s',$param['img'])?>" >
                     </div>
                     <div class="name">
                         <h4><?=sprintf('%s',$param['animal'])?></h4>

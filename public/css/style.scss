@@ -103,6 +103,20 @@ html{
                                
                     }
                     .left{
+
+                        .imgWrapper{
+                            max-width: 320px;
+                            max-height: 280px;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .name h4{
+                            text-align: center;
+                            font-size: 30px;
+                            font-weight: 500;
+
                         .name{  
                             margin-top: 25px;
                                 padding: 10px 15px;
@@ -115,6 +129,7 @@ html{
                                 font-size: 30px;
                                 font-weight: 500;
                             }
+
                         }
                     }
                     .capture{

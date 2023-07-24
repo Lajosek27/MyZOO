@@ -81,43 +81,6 @@ html body main > .mainWrapper #animalInfo {
   gap: 30px;
 }
 
-html body main > .mainWrapper #animalInfo .flags {
-  position: relative;
-  top: -380px;
-}
-
-html body main > .mainWrapper #animalInfo .flags .flag {
-  margin-top: 25px;
-  padding: 10px 15px;
-  background-color: #262a56;
-  color: #fff;
-  border-radius: 0 25px;
-  transition: color,background-color 0.1s ease-in;
-  width: min-content;
-  white-space: nowrap;
-}
-
-html body main > .mainWrapper #animalInfo .flags .flag p {
-  margin-bottom: 0;
-}
-
-html body main > .mainWrapper #animalInfo .flags .flag span {
-  opacity: 1;
-}
-
-html body main > .mainWrapper #animalInfo .flags .capture {
-  float: right;
-  margin-top: 0;
-}
-
-html body main > .mainWrapper #animalInfo .left .name {
-  margin-top: 25px;
-  padding: 10px 15px;
-  background-color: var(--main);
-  color: #fff;
-  border-radius: 0 40px;
-  transition: color,background-color 0.1s ease-in;
-}
 
 html body main > .mainWrapper #animalInfo .left .name h4 {
   text-align: center;

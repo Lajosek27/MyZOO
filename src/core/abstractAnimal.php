@@ -7,7 +7,9 @@ abstract class abstractAnimal
     protected string $speciesType;
     private string $name;
     private bool $captured = false;
-    
+
+    private string $coverImg ='myzoo.jpeg';
+
     final public function __construct($name)
     {
         $this->name = $name;
@@ -48,9 +50,20 @@ abstract class abstractAnimal
     {
         return $this->captured ;
     }
+
     public function getName():string
     {
         return $this->name;
+
+    }
+    public function setCoverImg($imgName)
+    {
+        $this->coverImg = $imgName;
+    }
+    public function getCoverImg()
+    {
+        return  $this->coverImg; 
+
     }
    
 }
