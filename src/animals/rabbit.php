@@ -2,12 +2,13 @@
 namespace App\animals;
 
 use App\core\abstractAnimal;
-use App\core\carnivorousIntreface;
+
+use App\core\herbivoresIntreface;
 use App\core\furryAnimalInterface;
 
-class tiger extends abstractAnimal implements carnivorousIntreface,furryAnimalInterface
+class rabbit extends abstractAnimal implements herbivoresIntreface,furryAnimalInterface
 {   
-    protected string $speciesType ="Tygrys";
+    protected string $speciesType ="Królik";
    
 
     /**
@@ -15,9 +16,9 @@ class tiger extends abstractAnimal implements carnivorousIntreface,furryAnimalIn
      *
      * @return string
      */
-    public function feedWithMeat():string
+    public function feedWithVeggies():string
     {   
-        return $this .' jest bardzo szczęśliwy, że otrzymał krwisty stek';
+        return $this .' kooooocha marchew';
     }
 
      /**
@@ -27,6 +28,6 @@ class tiger extends abstractAnimal implements carnivorousIntreface,furryAnimalIn
      */
     public function brushFur():string
     {
-        return $this->getName() .' mruczy z zadowleniem z gdy ma wyczesane futerko';
+        return $this->getName() .' tupta wesoło nóżką';
     }
 }

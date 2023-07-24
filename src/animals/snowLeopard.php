@@ -5,9 +5,9 @@ use App\core\abstractAnimal;
 use App\core\carnivorousIntreface;
 use App\core\furryAnimalInterface;
 
-class tiger extends abstractAnimal implements carnivorousIntreface,furryAnimalInterface
+class snowLeopard extends abstractAnimal implements carnivorousIntreface,furryAnimalInterface
 {   
-    protected string $speciesType ="Tygrys";
+    protected string $speciesType ="Ibrys śnieżny";
    
 
     /**
@@ -17,7 +17,7 @@ class tiger extends abstractAnimal implements carnivorousIntreface,furryAnimalIn
      */
     public function feedWithMeat():string
     {   
-        return $this .' jest bardzo szczęśliwy, że otrzymał krwisty stek';
+        return $this .' uwiebia zjadać małe zwięrzątka';
     }
 
      /**
@@ -27,6 +27,6 @@ class tiger extends abstractAnimal implements carnivorousIntreface,furryAnimalIn
      */
     public function brushFur():string
     {
-        return $this->getName() .' mruczy z zadowleniem z gdy ma wyczesane futerko';
+        return $this->getName() .' lubi być czesany ale czeszący ma jeszcze więcej radości';
     }
 }

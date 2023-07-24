@@ -50,6 +50,12 @@ abstract class abstractAnimal
     {
         return $this->captured ;
     }
+
+    public function getName():string
+    {
+        return $this->name;
+
+    }
     public function setCoverImg($imgName)
     {
         $this->coverImg = $imgName;
@@ -57,6 +63,7 @@ abstract class abstractAnimal
     public function getCoverImg()
     {
         return  $this->coverImg; 
+
     }
    
 }

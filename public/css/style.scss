@@ -109,6 +109,8 @@ html{
                             max-height: 280px;
                             min-height: 270px;
                             overflow: hidden;
+                            display: flex;
+                            align-items: flex-end;
                             img{
                                 width: 100%;
                             }
