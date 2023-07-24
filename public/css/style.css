@@ -115,6 +115,8 @@ html body main > .mainWrapper #animalInfo .left .imgWrapper {
   max-height: 280px;
   min-height: 270px;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 
 html body main > .mainWrapper #animalInfo .left .imgWrapper img {

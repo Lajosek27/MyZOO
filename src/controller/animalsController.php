@@ -36,15 +36,19 @@ class animalsController
                 break;
             case 'fox':
                 $this->animal = new fox('Mateuszek');
+                $this->animal->setCoverImg('fox.webp');
                 break;
             case 'elephant':
                 $this->animal = new elephant('Trąbalski');
+                $this->animal->setCoverImg('elephant.webp');
                 break;
             case 'snowLeopard':
                 $this->animal = new snowLeopard('Centuś');
+                $this->animal->setCoverImg('snow-leopard.jpg');
                 break;
             case 'rabbit':
                 $this->animal = new rabbit('Kurt');
+                $this->animal->setCoverImg('rabbit.webp');
                 break;
         }    
 
