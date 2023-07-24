@@ -364,12 +364,7 @@ html body main > .mainWrapper #animalInfo .right .actions {
   }
   html body main > .mainWrapper #animalInfo .right .actions > div {
     width: 45%;
-  }
-}
-
-@media (max-width: 756px) {
-  html body main > .mainWrapper #animalInfo .right .actions > div:nth-child(odd) {
-    text-align: end;
+    text-align: center;
   }
 }
 

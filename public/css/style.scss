@@ -326,14 +326,11 @@ html{
                                 }
                                 >div{
                                     width: 45%;
+                                    text-align: center;
                                 }
                             }
                         }
-                        @media (max-width:756px){
-                            .actions >div:nth-child(odd) {
-                                text-align: end;
-                            }
-                        }
+                       
                     }
                           
                 }
