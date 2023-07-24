@@ -15,7 +15,7 @@
             <nav class="navbar navbar-expand-xl " >
                 <div class="container-fluid">
                     <div class="logo"><a href=""><h2>MyZOO</h2></a></div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -48,26 +48,3 @@
         </section>
     </div>
 </header>
-<!--
-
-            <nav class="nav">
-                <ul>
-                    <li >
-                        <a  id="animalsDropdown" >Zadanie 1</a>
-                        <div id="animalsDropdownContent">
-                            <a class="" href="#">Action</a>
-                            <a class="" href="#">Another action</a>
-                            <a class="" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li><a href="">Zadanie 2</a></li>
-                    <li><a href="">Repozytorium na githubie</a></li>
-             <li><a href="">Tygrys</a></li>
-                    <li><a href="">Słoń</a></li>
-                    <li><a href="">Nosorożec</a></li>
-                    <li><a href="">Lis</a></li>
-                    <li><a href="">Ibris</a></li>
-                    <li><a href="">Królik</a></li> 
-                    </ul>
-            </nav>
--->
