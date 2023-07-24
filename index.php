@@ -21,4 +21,16 @@ switch($uri)
     case '/rino':
         echo $animal->showAnimal('rino');
     break;
+    case '/fox':
+        echo $animal->showAnimal('fox');
+    break;
+    case '/elephant':
+        echo $animal->showAnimal('elephant');
+    break;
+    case '/snow-leopard':
+        echo $animal->showAnimal('snowLeopard');
+    break;
+    case '/rabbit':
+        echo $animal->showAnimal('rabbit');
+    break;
 }

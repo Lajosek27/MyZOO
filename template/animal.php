@@ -80,7 +80,7 @@
                         <?php if(method_exists($param['animal'],'feedWithVeggies')): ?>
                             <div class="FeedVeggiesForm">
 
-                                    <button type="submit"  onClick='newMessage("<?=sprintf('%s',$param['animal']->feedWithVeggies())?>")'>Nakarm Mięsem</button>
+                                    <button type="submit"  onClick='newMessage("<?=sprintf('%s',$param['animal']->feedWithVeggies())?>")'>Nakarm roślinami</button>
                              
                             </div>
                         <?php endif; ?>

@@ -3,8 +3,12 @@
 namespace  App\Controller;
 
 use App\core\template;
+use App\animals\snowLeopard;
+use App\animals\elephant;
+use App\animals\rabbit;
 use App\animals\tiger;
 use App\animals\rino;
+use App\animals\fox;
 
 
 /**
@@ -27,6 +31,18 @@ class animalsController
                 break;
             case 'rino':
                 $this->animal = new rino('Kajtek');
+                break;
+            case 'fox':
+                $this->animal = new fox('Mateuszek');
+                break;
+            case 'elephant':
+                $this->animal = new elephant('Trąbalski');
+                break;
+            case 'snowLeopard':
+                $this->animal = new snowLeopard('Centuś');
+                break;
+            case 'rabbit':
+                $this->animal = new rabbit('Kurt');
                 break;
         }    
 

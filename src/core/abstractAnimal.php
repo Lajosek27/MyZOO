@@ -48,6 +48,9 @@ abstract class abstractAnimal
     {
         return $this->captured ;
     }
-    
+    public function getName():string
+    {
+        return $this->name;
+    }
    
 }
