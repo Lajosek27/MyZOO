@@ -77,8 +77,33 @@ html{
                     display: flex;
                     flex-direction: row;
                     gap: 30px;
-
+                    .flags{
+                       position: relative;
+                       top: -380px;
+                        .flag{
+                            margin-top: 25px;
+                            padding: 10px 15px;
+                            background-color: rgba(38, 42, 86, 1);
+                            color: #fff;
+                            border-radius: 0 25px;
+                            transition: color,background-color 0.1s ease-in;
+                            width: min-content;
+                            white-space: nowrap;
+                            p{
+                                margin-bottom: 0;
+                            }
+                            span{
+                                opacity: 1;
+                            }
+                        }
+                        .capture{
+                            float: right;
+                            margin-top: 0;
+                        }
+                               
+                    }
                     .left{
+
                         .imgWrapper{
                             max-width: 320px;
                             max-height: 280px;
@@ -91,15 +116,23 @@ html{
                             text-align: center;
                             font-size: 30px;
                             font-weight: 500;
+
+                        .name{  
+                            margin-top: 25px;
+                                padding: 10px 15px;
+                                background-color: var(--main);
+                                color: #fff;
+                                border-radius: 0 40px;
+                                transition: color,background-color 0.1s ease-in;
+                            h4{
+                                text-align: center;
+                                font-size: 30px;
+                                font-weight: 500;
+                            }
+
                         }
                     }
                     .capture{
-                        font-size: 18px;
-                        
-                        span{
-                            font-weight: 600;
-                        }
-
                         span.free{
                             color: var(--link);
                         }
@@ -107,9 +140,99 @@ html{
                             color: red;
                         }
                     }
-                  
+                    .food{
+                        span.meat{
+                            color: red; 
+                        }
+                        span.vaggies{
+                            color: var(--link); 
+                        }
+                        span.all{
+                            background: rgb(255,0,0);
+                            background: -moz-linear-gradient(256deg, rgba(255,0,0,1) 0%, rgba(26,145,54,1) 89%);
+                            background: -webkit-linear-gradient(256deg, rgba(255,0,0,1) 0%, rgba(26,145,54,1) 89%);
+                            background: linear-gradient(256deg, rgba(255,0,0,1) 0%, rgba(26,145,54,1) 89%);
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#1a9136",GradientType=1);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                    >div{
+                        font-size: 16px;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                    .actions{   
+                        button{ 
+                            padding: 10px 15px;
+                            background-color: var(--link);
+                            color: #fff;
+                            border-radius: 0 15px;
+                            transition: color,background-color 0.1s ease-in;
+                            font-size: 27px;
+                            max-height: 64px;
+                        }
+                        button:hover{
+                                background-color: #fff;
+                                color: var(--link);
+                        }
+                    }
+                 .right{    
+                    width: 80%;
+                        .czat{
+                            width: 100%;
+                            height: 282px;
+                            padding: 10px 40px;
+                            background-color: rgba(38, 42, 86, 1);
+                            color: #fff;
+                            border-radius: 0 50px;
+                            transition: color,background-color 0.1s ease-in;
+                            display: flex;
+                            align-items: flex-end;
+                            .text {
+                                font-size: 20px;
+                                max-height: 255px;
+                                overflow-y: scroll;
+                                width: 100%;
+
+                                
+                            }
+                            .text::-webkit-scrollbar {
+                                width: 3px;
+                              }
+                            .text::-webkit-scrollbar-track {
+                                background: #f1f1f1;
+                              }
+                              .text::-webkit-scrollbar-thumb {
+                                background: #888;
+                              }
+                            .cursor{
+                                border-left: .05em solid var(--text);
+                                animation: cursor 1s steps(1) infinite;
+                                color: var(--main);
+                                scroll-behavior: smooth;
+                               
+                            }
+                            .text p{
+                                margin-bottom: 5px;
+                            }
+                        } 
+                       
+                        .actions{
+                            display: flex;
+                            margin-top: 23px;
+                            gap: 20px;
+                        }
+                    }
+                          
                 }
             }
         }
     }
 }
+@keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }

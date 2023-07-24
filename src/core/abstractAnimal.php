@@ -6,10 +6,10 @@ abstract class abstractAnimal
 {   
     protected string $speciesType;
     private string $name;
-
     private bool $captured = false;
 
     private string $coverImg ='myzoo.jpeg';
+
     final public function __construct($name)
     {
         $this->name = $name;
