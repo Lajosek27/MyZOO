@@ -14,7 +14,7 @@
         <section>
             <nav class="navbar navbar-expand-xl " >
                 <div class="container-fluid">
-                    <div class="logo"><a href=""><h2>MyZOO</h2></a></div>
+                    <div class="logo"><a href="/"><h2>MyZOO</h2></a></div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,7 +33,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Zadanie 2</a>
+                                <a class="nav-link active" aria-current="page" href="/tastTwo">Zadanie 2</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://github.com/Lajosek27/MyZOO">Repozytorium</a>

@@ -338,8 +338,30 @@ html{
         }
     }
 }
+#index{
+    
+    .mainWrapper{
+
+        #content
+        {
+            padding: 40px;
+            border-radius: 0 50px;
+            background-color: var(--main);
+            color: var(--text);
+            margin:30px 0;
+        }
+        .imgWrapper{
+            margin:20px 0;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
 @keyframes cursor {
     50% {
       border-color: transparent;
     }
   }
+

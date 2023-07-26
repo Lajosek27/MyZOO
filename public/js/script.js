@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-    if(messages.dataset.startMessage)
+    if(!document.querySelector('#index') && messages.dataset.startMessage)
     {
         newMessage(messages.dataset.startMessage,1)
     }
@@ -7,13 +7,16 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
  
-
-    const messages = document.getElementById('czatMessages')
-    var czat = document.querySelector("#czat .text");
-    var message = czat.querySelector("p:last-of-type");
-    let animal = document.querySelector('#animalInfo .name h4').innerText
-    let index = textPosition = 0;   
-    let textToWrite = animal + ' to zapamięta.' ;
+    if(!document.querySelector('#index'))
+    {
+        const messages = document.getElementById('czatMessages')
+        var czat = document.querySelector("#czat .text");
+        var message = czat.querySelector("p:last-of-type");
+        let animal = document.querySelector('#animalInfo .name h4').innerText
+        let index = textPosition = 0;   
+        let textToWrite = animal + ' to zapamięta.' ;
+    }
+    
     
     function writeText()
     {   

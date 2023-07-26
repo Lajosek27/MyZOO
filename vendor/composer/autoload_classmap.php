@@ -6,9 +6,17 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\animals\\elephant' => $baseDir . '/src/animals/elephant.php',
+    'App\\animals\\fox' => $baseDir . '/src/animals/fox.php',
+    'App\\animals\\rabbit' => $baseDir . '/src/animals/rabbit.php',
     'App\\animals\\rino' => $baseDir . '/src/animals/rino.php',
+    'App\\animals\\snowLeopard' => $baseDir . '/src/animals/snowLeopard.php',
     'App\\animals\\tiger' => $baseDir . '/src/animals/tiger.php',
     'App\\core\\abstractAnimal' => $baseDir . '/src/core/abstractAnimal.php',
+    'App\\core\\carnivorousIntreface' => $baseDir . '/src/core/carnivorousIntreface.php',
+    'App\\core\\furryAnimalInterface' => $baseDir . '/src/core/furryAnimalInterface.php',
+    'App\\core\\herbivoresIntreface' => $baseDir . '/src/core/herbivoresIntreface.php',
+    'App\\core\\omnivorousIntreface' => $baseDir . '/src/core/omnivorousIntreface.php',
     'App\\core\\template' => $baseDir . '/src/core/template.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
