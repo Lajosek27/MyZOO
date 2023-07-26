@@ -16,6 +16,6 @@
     </div>
   </main>
     
-    <?php require(TEMPLATE_PATH.'footer.php'); ?>
+
   </body>
 </html>
